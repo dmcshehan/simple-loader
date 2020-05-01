@@ -1,0 +1,44 @@
+.loader {
+  position: relative;
+  display: flex;
+  width: 400px;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+
+  &__square {
+    position: relative;
+
+    width: 90px;
+    height: 90px;
+
+    background-color: rgab(0, 0, 0, 0.2);
+  }
+  &__rotator {
+    width: 90px;
+    height: 90px;
+    background-color: red;
+    position: absolute;
+    z-index: -2;
+    // right: -100%;
+
+    animation: go 2s linear infinite;
+  }
+}
+
+@keyframes go {
+  0% {
+    right: 310px;
+    opacity: 1;
+  }
+
+  50% {
+    right: 310px;
+    opacity: 1;
+  }
+
+  100% {
+    right: 310px;
+    opacity: 1;
+  }
+}
